@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ProjetoLP</title>
+</head>
+<body>
+
+
+    <!--Menu Superior-->
+    <div id="Menu_Superior">
+        <a href="https://learning.dnc.group/course/desenvolvedor-front-end-v2/player/122958/content/260856">
+            <img src="/Imagens/logo.svg" id="logo" alt="ERROR">
+        </a>
+        <h1 id="Titulo_Menu_Superior">Dê os primeiros passos da <br>
+            sua carreira em Tecnologia</h1>
+        <p id="Texto_Menu_Superior">Inscreva-se no curso gratuito de Introdução à <br>
+            Tecnologia da DNC School e aprenda os principais <br>
+            fundamentos para construir experiências efetivas.</p>
+    </div>    
+
+
+    <!--Menu Informacional-->
+    <div id="Menu_Informacional">
+        <p class="Texto_Infornativo"><img src="Icons/certificado.svg" class="Icons" id="certificado" alt=""> Certificado de conclusão</p>
+        <p class="Texto_Infornativo"><img src="Icons/relogio.svg" class="Icons" id="relogio" alt=""> 4 horas de conteúdo</p>
+        <p class="Texto_Infornativo"><img src="Icons/camera.svg" class="Icons" id="camera" alt=""> Aulas online gravadas</p>
+    </div>
+
+
+    <!--Seção do Video-->
+    <div id="Secao_Video">
+        <iframe id="Video" width="502" height="283" src="https://www.youtube.com/embed/Czm4ydtGvN0" title="Consegui Resolver o Pior Desafio do Curso de Programação de Harvard  | #9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="Secao_Video_Informacoes">
+        <h1 id="Titulo_Video">Aprenda com especialistas e <br> <br>
+            comece seu primeiro projeto</h1>
+            <p id="Texto_Video">Conheça o processo de desenvolvimento e entenda como utilizar <br>
+                os principais métodos e ferramentas da área para resolver <br>
+                problemas complexos.
+
+                Conquiste seu certificado e desenvolva um projeto prático para <br>
+                aplicar seus conhecimentos.</p>
+            </div>
+    </div>
+
+    <!--CARROSSEL-->
+    <div id="carrossel">
+        <H1 id="Titulo_Carrossel">Mais de 500 alunos já iniciaram seus estudos</H1> 
+
+            <!--DIVISÃO DOS CARDS-->
+            <div id="Cards_Carrossel">
+                <img id="seta_esquerda" onclick="RolarParaEsquerda()" class="seta" src="Icons/seta_esquerda.svg" alt="">
+                <img id="Bruna" src="Cards/Bruna.svg" class="Cards" alt="">
+                <img id="Leonardo" src="Cards/Leonardo.svg" class="Cards" alt="">
+                <img id="Samantha" src="Cards/Samantha.svg" class="Cards" alt="">
+                <img id="seta_direita" onclick="RolarParaDireita()" class="seta" src="Icons/seta_direita.svg" alt="">
+            </div>
+    </div>
+
+    <!--FORMULÁRIO-->
+    <div id ="Formulario">
+        <h1 id="Titulo_Formulario"> Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+        <form action="https://api.sheetmonkey.io/form/8JSaCtoFswS57UQZ6b5C3j" method="post" id="Formulario_Inscrever">
+            <input type="text" placeholder="Nome Completo" name="Name" required> <br>
+            <input type="email" placeholder="Email" name="Email" required> <br>
+            <input type="number" placeholder="Telefone" name="Phone"> <br>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <button type="submit">Acesse a ementa grátis</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
